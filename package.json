@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/durmusrasit/selenium-helper/issues"
   },
-  "homepage": "https://github.com/durmusrasit/selenium-helper#readme"
+  "homepage": "https://github.com/durmusrasit/selenium-helper#readme",
+  "dependencies": {
+    "selenium-webdriver": "^4.1.1",
+    "xlsx": "^0.18.3"
+  }
 }

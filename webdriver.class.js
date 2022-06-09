@@ -1,5 +1,6 @@
 const chrome = require("selenium-webdriver/chrome");
 const webdriver = require("selenium-webdriver");
+const { until, By } = require("selenium-webdriver");
 
 class WebDriver {
   constructor(debuggerAddress, webAddress) {
@@ -13,6 +14,13 @@ class WebDriver {
 
   async start() {
     await this.driver.get(this.webAddress);
+  }
+
+  async findAndClickElementByXPath(xpath) {
+    const locateElement = await this.driver.wait(
+      until.elementLocated(By.xpath(xpath))
+    );
+    if (locateElement) await this.driver.findElement(By.xpath(xpath)).click();
   }
 }
 

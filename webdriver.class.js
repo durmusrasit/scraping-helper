@@ -22,6 +22,14 @@ class WebDriver {
     );
     if (locateElement) await this.driver.findElement(By.xpath(xpath)).click();
   }
+
+  async findAndSendKeysByXPath(xpath, keys) {
+    const locateElement = await this.driver.wait(
+      until.elementLocated(By.xpath(xpath))
+    );
+    if (locateElement)
+      await this.driver.findElement(By.xpath(xpath)).sendKeys(keys);
+  }
 }
 
 module.exports = WebDriver;

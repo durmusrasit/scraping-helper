@@ -16,7 +16,7 @@ class WebDriver {
     await this.driver.get(this.webAddress);
   }
 
-  async findAndClickElementByXPath(xpath) {
+  async findAndClickByXPath(xpath) {
     const locateElement = await this.driver.wait(
       until.elementLocated(By.xpath(xpath))
     );

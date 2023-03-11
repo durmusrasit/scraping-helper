@@ -1,5 +1,5 @@
 {
-  "name": "selenium-helper",
+  "name": "scraping-helper",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/durmusrasit/selenium-helper.git"
+    "url": "git+https://github.com/durmusrasit/scraping-helper.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/durmusrasit/selenium-helper/issues"
+    "url": "https://github.com/durmusrasit/scraping-helper/issues"
   },
-  "homepage": "https://github.com/durmusrasit/selenium-helper#readme",
+  "homepage": "https://github.com/durmusrasit/scraping-helper#readme",
   "dependencies": {
     "selenium-webdriver": "^4.1.1",
     "xlsx": "^0.18.3"
